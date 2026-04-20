@@ -8283,6 +8283,20 @@
       "value": "]"
     }
   ],
+  "register_form.message.or_sign_up_with": [
+    {
+      "type": 0,
+      "value": "["
+    },
+    {
+      "type": 0,
+      "value": "Ǿř şīɠƞ ŭŭƥ ẇīŧħ"
+    },
+    {
+      "type": 0,
+      "value": "]"
+    }
+  ],
   "registration.title.create_account": [
     {
       "type": 0,
@@ -9469,6 +9483,20 @@
     {
       "type": 0,
       "value": "Ȧřḗḗ ẏǿǿŭŭ şŭŭřḗḗ ẏǿǿŭŭ ẇȧȧƞŧ ŧǿǿ şīɠƞ ǿǿŭŭŧ? Ẏǿǿŭŭ ẇīŀŀ ƞḗḗḗḗḓ ŧǿǿ şīɠƞ ƀȧȧƈķ īƞ ŧǿǿ ƥřǿǿƈḗḗḗḗḓ ẇīŧħ ẏǿǿŭŭř ƈŭŭřřḗḗƞŧ ǿǿřḓḗḗř."
+    },
+    {
+      "type": 0,
+      "value": "]"
+    }
+  ],
+  "social_callback.message.signing_in": [
+    {
+      "type": 0,
+      "value": "["
+    },
+    {
+      "type": 0,
+      "value": "Şīɠƞīƞɠ ẏǿǿŭŭ īƞ..."
     },
     {
       "type": 0,

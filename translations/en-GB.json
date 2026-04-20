@@ -1642,6 +1642,9 @@
   "register_form.message.create_an_account": {
     "defaultMessage": "Create an account and get first access to the very best products, inspiration and community."
   },
+  "register_form.message.or_sign_up_with": {
+    "defaultMessage": "Or sign up with"
+  },
   "registration.title.create_account": {
     "defaultMessage": "Create Account"
   },
@@ -1888,6 +1891,9 @@
   },
   "signout_confirmation_dialog.message.sure_to_sign_out": {
     "defaultMessage": "Are you sure you want to sign out? You will need to sign back in to proceed with your current order."
+  },
+  "social_callback.message.signing_in": {
+    "defaultMessage": "Signing you in..."
   },
   "social_login_redirect.message.authenticating": {
     "defaultMessage": "Authenticating..."

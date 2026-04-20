@@ -7,6 +7,9 @@
 
 'use strict'
 
+// Must run before other imports that call getConfig() (e.g. react-rendering).
+import './prime-ssr-config.js'
+
 import crypto from 'crypto'
 import express from 'express'
 import helmet from 'helmet'

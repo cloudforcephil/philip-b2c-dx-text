@@ -3939,6 +3939,12 @@
       "value": "Create an account and get first access to the very best products, inspiration and community."
     }
   ],
+  "register_form.message.or_sign_up_with": [
+    {
+      "type": 0,
+      "value": "Or sign up with"
+    }
+  ],
   "registration.title.create_account": [
     {
       "type": 0,
@@ -4473,6 +4479,12 @@
     {
       "type": 0,
       "value": "Are you sure you want to sign out? You will need to sign back in to proceed with your current order."
+    }
+  ],
+  "social_callback.message.signing_in": [
+    {
+      "type": 0,
+      "value": "Signing you in..."
     }
   ],
   "social_login_redirect.message.authenticating": [

@@ -169,13 +169,23 @@ module.exports = {
     ssrShared: [
         'static/ico/favicon.ico',
         'static/robots.txt',
+        // Lambda loads these from build/ at runtime (pwa-kit-runtime build-remote-server render()).
+        // Listed explicitly so they are never mistaken as optional; globs below still include other assets.
+        'server-renderer.js',
+        'loadable-stats.json',
+        // Ensure app config is always packaged for Lambda (see getConfig / cosmiconfig)
+        'config/default.js',
+        'config/production.js',
+        'config/sites.js',
+        'config/utils.js',
         '**/*.js',
         '**/*.js.map',
         '**/*.json'
     ],
     // Additional parameters that configure Express app behavior.
     ssrParameters: {
-        ssrFunctionNodeVersion: '24.x',
+        // Managed Runtime: use an LTS runtime supported for your project (commonly 18.x or 20.x).
+        ssrFunctionNodeVersion: '20.x',
         proxyConfigs: [
             {
                 host: 'kv7kzm78.api.commercecloud.salesforce.com',
