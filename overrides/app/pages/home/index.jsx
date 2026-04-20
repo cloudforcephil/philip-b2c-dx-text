@@ -10,9 +10,10 @@ import {useLocation} from 'react-router-dom'
 
 // Components
 import {Box, Button, Stack, Link} from '@salesforce/retail-react-app/app/components/shared/ui'
+import SpaLink from '@salesforce/retail-react-app/app/components/link'
 
-// Project Components
-import Hero from '@salesforce/retail-react-app/app/components/hero'
+// Relative path so this override page loads our `components/hero` override (template imports from here skip override remapping).
+import Hero from '../../components/hero'
 import Seo from '@salesforce/retail-react-app/app/components/seo'
 import Section from '@salesforce/retail-react-app/app/components/section'
 import ProductScroller from '@salesforce/retail-react-app/app/components/product-scroller'
@@ -26,10 +27,12 @@ import useEinstein from '@salesforce/retail-react-app/app/hooks/use-einstein'
 // Constants
 import {
     CUSTOM_HOME_TITLE,
+    STORE_DISPLAY_NAME,
     HOME_SHOP_PRODUCTS_CATEGORY_ID,
     HOME_SHOP_PRODUCTS_LIMIT,
     MAX_CACHE_AGE,
-    STALE_WHILE_REVALIDATE
+    STALE_WHILE_REVALIDATE,
+    CAT_MENU_DEFAULT_ROOT_CATEGORY
 } from '../../constants'
 
 import {useServerContext} from '@salesforce/pwa-kit-react-sdk/ssr/universal/hooks'
@@ -76,23 +79,41 @@ const Home = () => {
     return (
         <Box data-testid="home-page" layerStyle="page">
             <Seo
-                title="Home Page"
-                description="Commerce Cloud Retail React App"
-                keywords="Commerce Cloud, Retail React App, React Storefront"
+                title={intl.formatMessage(
+                    {
+                        id: 'home.seo.title',
+                        defaultMessage: '{storeName} — Home'
+                    },
+                    {storeName: STORE_DISPLAY_NAME}
+                )}
+                description={intl.formatMessage(
+                    {
+                        id: 'home.seo.description',
+                        defaultMessage: 'Shop the {storeName} storefront.'
+                    },
+                    {storeName: STORE_DISPLAY_NAME}
+                )}
+                keywords="Commerce Cloud, PWA Kit, Retail React App"
             />
 
             <Hero
+                eyebrow={
+                    <FormattedMessage id="home.hero.eyebrow" defaultMessage="SHOP" />
+                }
                 title={CUSTOM_HOME_TITLE}
                 img={{
                     src: getAssetUrl('static/img/hero.png'),
-                    alt: 'npx pwa-kit-create-app'
+                    alt: intl.formatMessage({
+                        id: 'home.hero.image.alt',
+                        defaultMessage: '{storeName} storefront hero image',
+                        description: 'Alt text for the marketing hero image on the home page'
+                    }, {storeName: STORE_DISPLAY_NAME})
                 }}
                 actions={
                     <Stack spacing={{base: 4, sm: 6}} direction={{base: 'column', sm: 'row'}}>
                         <Button
-                            as={Link}
-                            href="https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/getting-started.html"
-                            target="_blank"
+                            as={SpaLink}
+                            to={`/category/${CAT_MENU_DEFAULT_ROOT_CATEGORY}`}
                             width={{base: 'full', md: 'inherit'}}
                             paddingX={7}
                             _hover={{textDecoration: 'none'}}

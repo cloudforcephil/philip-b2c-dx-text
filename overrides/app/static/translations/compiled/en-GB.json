@@ -2377,6 +2377,22 @@
       "value": "Shop Products"
     }
   ],
+  "home.hero.eyebrow": [
+    {
+      "type": 0,
+      "value": "SHOP"
+    }
+  ],
+  "home.hero.image.alt": [
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": " storefront hero image"
+    }
+  ],
   "home.hero_features.link.design_kit": [
     {
       "type": 0,
@@ -2405,6 +2421,30 @@
     {
       "type": 0,
       "value": "Read docs"
+    }
+  ],
+  "home.seo.description": [
+    {
+      "type": 0,
+      "value": "Shop the "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": " storefront."
+    }
+  ],
+  "home.seo.title": [
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": " — Home"
     }
   ],
   "icons.assistive_msg.lock": [
@@ -2497,16 +2537,24 @@
       "value": "Please select all your options above"
     }
   ],
-  "legal_page.description.privacy": [
+  "legal_page.brand.confirmation": [
     {
       "type": 0,
-      "value": "How this demo storefront handles information."
+      "value": "You are reading a legal page for the online store named "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": "."
     }
   ],
-  "legal_page.description.terms": [
+  "legal_page.brand.eyebrow": [
     {
       "type": 0,
-      "value": "Demo terms for this storefront."
+      "value": "Online store"
     }
   ],
   "legal_page.privacy.collection.body": [
@@ -2524,7 +2572,15 @@
   "legal_page.privacy.contact.body": [
     {
       "type": 0,
-      "value": "For questions about privacy in this demo, contact your Salesforce team or storefront owner. Do not submit sensitive personal data to demo environments."
+      "value": "For questions about privacy for "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": ", contact your Salesforce team or storefront owner. Do not submit sensitive personal data to demo environments."
     }
   ],
   "legal_page.privacy.contact.heading": [
@@ -2536,7 +2592,15 @@
   "legal_page.privacy.intro": [
     {
       "type": 0,
-      "value": "This is a demonstration storefront. It is not a live commerce site, and orders are not processed. The text below is sample copy for development and UX review only and does not constitute a binding legal agreement."
+      "value": "This page describes privacy practices for "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": ". This is a demonstration storefront: it is not a live commerce site, orders are not processed, and the text below is sample copy for development and UX review only. It does not constitute a binding legal agreement."
     }
   ],
   "legal_page.privacy.use.body": [
@@ -2549,6 +2613,54 @@
     {
       "type": 0,
       "value": "How information is used"
+    }
+  ],
+  "legal_page.seo.description.privacy": [
+    {
+      "type": 0,
+      "value": "Privacy Policy for the "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": " online store."
+    }
+  ],
+  "legal_page.seo.description.terms": [
+    {
+      "type": 0,
+      "value": "Terms & Conditions for the "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": " online store."
+    }
+  ],
+  "legal_page.seo.title.privacy": [
+    {
+      "type": 0,
+      "value": "Privacy Policy — "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    }
+  ],
+  "legal_page.seo.title.terms": [
+    {
+      "type": 0,
+      "value": "Terms & Conditions — "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
     }
   ],
   "legal_page.terms.changes.body": [
@@ -2566,7 +2678,15 @@
   "legal_page.terms.intro": [
     {
       "type": 0,
-      "value": "This is a demonstration storefront only. Purchases are not fulfilled, payments are not processed, and nothing on this page is legal advice. Replace this content with terms drafted or reviewed by qualified counsel before production use."
+      "value": "These terms apply to your use of "
+    },
+    {
+      "type": 1,
+      "value": "storeName"
+    },
+    {
+      "type": 0,
+      "value": ". This is a demonstration storefront only: purchases are not fulfilled, payments are not processed, and nothing on this page is legal advice. Replace this content with terms drafted or reviewed by qualified counsel before production use."
     }
   ],
   "legal_page.terms.products.body": [

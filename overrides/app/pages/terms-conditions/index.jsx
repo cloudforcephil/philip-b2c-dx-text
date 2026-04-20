@@ -8,6 +8,8 @@ import React from 'react'
 import {FormattedMessage, useIntl} from 'react-intl'
 import {Box, Heading, Stack, Text} from '@salesforce/retail-react-app/app/components/shared/ui'
 import Seo from '@salesforce/retail-react-app/app/components/seo'
+import LegalPageStoreBrand from '../../components/legal-page-store-brand'
+import {STORE_DISPLAY_NAME} from '../../constants'
 
 const TermsConditions = () => {
     const intl = useIntl()
@@ -15,28 +17,38 @@ const TermsConditions = () => {
     return (
         <Box data-testid="terms-conditions-page" layerStyle="page" py={8} px={{base: 4, md: 8}}>
             <Seo
-                title={intl.formatMessage({
-                    id: 'legal_page.title.terms',
-                    defaultMessage: 'Terms & Conditions'
-                })}
-                description={intl.formatMessage({
-                    id: 'legal_page.description.terms',
-                    defaultMessage: 'Demo terms for this storefront.'
-                })}
+                title={intl.formatMessage(
+                    {
+                        id: 'legal_page.seo.title.terms',
+                        defaultMessage: 'Terms & Conditions — {storeName}'
+                    },
+                    {storeName: STORE_DISPLAY_NAME}
+                )}
+                description={intl.formatMessage(
+                    {
+                        id: 'legal_page.seo.description.terms',
+                        defaultMessage: 'Terms & Conditions for the {storeName} online store.'
+                    },
+                    {storeName: STORE_DISPLAY_NAME}
+                )}
             />
-            <Stack spacing={6} maxW="3xl" mx="auto">
-                <Heading as="h1" size="xl">
-                    <FormattedMessage
-                        id="legal_page.title.terms"
-                        defaultMessage="Terms & Conditions"
-                    />
-                </Heading>
-                <Text color="gray.700">
-                    <FormattedMessage
-                        id="legal_page.terms.intro"
-                        defaultMessage="This is a demonstration storefront only. Purchases are not fulfilled, payments are not processed, and nothing on this page is legal advice. Replace this content with terms drafted or reviewed by qualified counsel before production use."
-                    />
-                </Text>
+            <Stack spacing={8} maxW="3xl" mx="auto">
+                <LegalPageStoreBrand />
+                <Box>
+                    <Heading as="h1" size="xl" mb={4}>
+                        <FormattedMessage
+                            id="legal_page.title.terms"
+                            defaultMessage="Terms & Conditions"
+                        />
+                    </Heading>
+                    <Text color="gray.700" fontSize="lg" fontWeight="medium">
+                        <FormattedMessage
+                            id="legal_page.terms.intro"
+                            defaultMessage="These terms apply to your use of {storeName}. This is a demonstration storefront only: purchases are not fulfilled, payments are not processed, and nothing on this page is legal advice. Replace this content with terms drafted or reviewed by qualified counsel before production use."
+                            values={{storeName: <strong>{STORE_DISPLAY_NAME}</strong>}}
+                        />
+                    </Text>
+                </Box>
                 <Stack spacing={3}>
                     <Heading as="h2" size="md">
                         <FormattedMessage
