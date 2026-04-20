@@ -2497,6 +2497,114 @@
       "value": "Please select all your options above"
     }
   ],
+  "legal_page.description.privacy": [
+    {
+      "type": 0,
+      "value": "How this demo storefront handles information."
+    }
+  ],
+  "legal_page.description.terms": [
+    {
+      "type": 0,
+      "value": "Demo terms for this storefront."
+    }
+  ],
+  "legal_page.privacy.collection.body": [
+    {
+      "type": 0,
+      "value": "In a production deployment, your organization would describe categories such as account details, order and payment data, device and usage data, and marketing preferences. Replace this page with counsel-approved content before launch."
+    }
+  ],
+  "legal_page.privacy.collection.heading": [
+    {
+      "type": 0,
+      "value": "Information we may collect"
+    }
+  ],
+  "legal_page.privacy.contact.body": [
+    {
+      "type": 0,
+      "value": "For questions about privacy in this demo, contact your Salesforce team or storefront owner. Do not submit sensitive personal data to demo environments."
+    }
+  ],
+  "legal_page.privacy.contact.heading": [
+    {
+      "type": 0,
+      "value": "Contact"
+    }
+  ],
+  "legal_page.privacy.intro": [
+    {
+      "type": 0,
+      "value": "This is a demonstration storefront. It is not a live commerce site, and orders are not processed. The text below is sample copy for development and UX review only and does not constitute a binding legal agreement."
+    }
+  ],
+  "legal_page.privacy.use.body": [
+    {
+      "type": 0,
+      "value": "Typical uses include fulfilling orders, fraud prevention, customer support, personalization, and—where permitted—marketing. Configure consent, retention, and subprocessors to match your privacy program."
+    }
+  ],
+  "legal_page.privacy.use.heading": [
+    {
+      "type": 0,
+      "value": "How information is used"
+    }
+  ],
+  "legal_page.terms.changes.body": [
+    {
+      "type": 0,
+      "value": "Merchants usually reserve the right to update terms and to indicate how and when notice is given. Implement versioning and publication dates as your legal team requires."
+    }
+  ],
+  "legal_page.terms.changes.heading": [
+    {
+      "type": 0,
+      "value": "Changes"
+    }
+  ],
+  "legal_page.terms.intro": [
+    {
+      "type": 0,
+      "value": "This is a demonstration storefront only. Purchases are not fulfilled, payments are not processed, and nothing on this page is legal advice. Replace this content with terms drafted or reviewed by qualified counsel before production use."
+    }
+  ],
+  "legal_page.terms.products.body": [
+    {
+      "type": 0,
+      "value": "Production terms typically address product descriptions, inventory, pricing errors, taxes, shipping, returns, and limitation of liability. This demo catalog is illustrative only."
+    }
+  ],
+  "legal_page.terms.products.heading": [
+    {
+      "type": 0,
+      "value": "Products, pricing, and orders"
+    }
+  ],
+  "legal_page.terms.use.body": [
+    {
+      "type": 0,
+      "value": "You would normally set expectations for acceptable use, account security, prohibited activities, and availability of the service. Align this language with your company policies and regional regulations."
+    }
+  ],
+  "legal_page.terms.use.heading": [
+    {
+      "type": 0,
+      "value": "Use of the site"
+    }
+  ],
+  "legal_page.title.privacy": [
+    {
+      "type": 0,
+      "value": "Privacy Policy"
+    }
+  ],
+  "legal_page.title.terms": [
+    {
+      "type": 0,
+      "value": "Terms & Conditions"
+    }
+  ],
   "list_menu.nav.assistive_msg": [
     {
       "type": 0,

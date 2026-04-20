@@ -20,6 +20,8 @@ const fallback = <Skeleton height="75vh" width="100%" />
 // Use loadable to split code into smaller js chunks
 const Home = loadable(() => import('./pages/home'), {fallback})
 const MyNewRoute = loadable(() => import('./pages/my-new-route'))
+const PrivacyPolicy = loadable(() => import('./pages/privacy-policy'), {fallback})
+const TermsConditions = loadable(() => import('./pages/terms-conditions'), {fallback})
 const SocialCallback = loadable(() => import('./pages/social-callback'), {fallback})
 
 export default () => {
@@ -45,6 +47,14 @@ export default () => {
         {
             path: '/my-new-route',
             component: MyNewRoute
+        },
+        {
+            path: '/privacy-policy',
+            component: PrivacyPolicy
+        },
+        {
+            path: '/terms-conditions',
+            component: TermsConditions
         },
         ...(socialCallbackRoute ? [socialCallbackRoute] : []),
         ..._routes

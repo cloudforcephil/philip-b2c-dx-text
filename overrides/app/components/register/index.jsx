@@ -109,7 +109,13 @@ const RegisterForm = ({submitForm, clickSignIn = noop, form}) => {
                                 defaultMessage="By creating an account, you agree to Salesforce <policy>Privacy Policy</policy> and <terms>Terms & Conditions</terms>"
                                 values={{
                                     policy: (chunks) => (
-                                        <ChakraLink as={Link} to="/privacy-policy" color="blue.600">
+                                        <ChakraLink
+                                            as={Link}
+                                            to="/privacy-policy"
+                                            color="blue.600"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             {chunks}
                                         </ChakraLink>
                                     ),
@@ -119,6 +125,8 @@ const RegisterForm = ({submitForm, clickSignIn = noop, form}) => {
                                             as={Link}
                                             to="/terms-conditions"
                                             color="blue.600"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                         >
                                             {chunks}
                                         </ChakraLink>
