@@ -10,6 +10,7 @@
 module.exports = [
     {
         id: 'philip-b2c-dx-text',
+        alias: 'philip-b2c-dx-text',
         l10n: {
             supportedCurrencies: ['USD'],
             defaultCurrency: 'USD',
@@ -25,6 +26,7 @@ module.exports = [
     },
     {
         id: 'philip-b2c-id-text',
+        alias: 'philip-b2c-id-text',
         l10n: {
             supportedCurrencies: ['USD'],
             defaultCurrency: 'USD',
