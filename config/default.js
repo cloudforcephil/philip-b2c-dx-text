@@ -185,8 +185,8 @@ module.exports = {
     ],
     // Additional parameters that configure Express app behavior.
     ssrParameters: {
-        // Managed Runtime: use an LTS runtime supported for your project (commonly 18.x or 20.x).
-        ssrFunctionNodeVersion: '20.x',
+        // Managed Runtime: use a runtime supported by your project (currently 22.x or 24.x).
+        ssrFunctionNodeVersion: '22.x',
         proxyConfigs: [
             {
                 host: 'kv7kzm78.api.commercecloud.salesforce.com',
