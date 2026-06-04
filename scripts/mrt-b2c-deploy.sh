@@ -13,7 +13,7 @@ npm run build
 exec b2c mrt bundle deploy \
   -p "$PROJECT" \
   -e "$TARGET" \
-  --node-version 20.x \
+  --node-version 22.x \
   --ssr-only 'ssr.js,ssr.js.map,node_modules/**/*.*' \
   --ssr-shared 'static/ico/favicon.ico,static/robots.txt,server-renderer.js,loadable-stats.json,config/default.js,config/production.js,config/sites.js,config/utils.js,**/*.js,**/*.js.map,**/*.json' \
   -m "$MSG"
